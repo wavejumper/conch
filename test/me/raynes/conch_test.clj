@@ -106,6 +106,8 @@
       (is (= "hi\nthere\n" (cat {:in ["hi" "there"]}))))
     (testing "Can input a file"
       (is (= "we\nwear\nshort\nshorts" (cat {:in (java.io.File. "test/testfiles/inputdata")}))))
+    (testing "Can input a stream"
+      (is (= "we\nwear\nshort\nshorts" (cat {:in (java.io.FileInputStream. "test/testfiles/inputdata")}))))
     (testing "Can input a reader"
       (is (= "we\nwear\nshort\nshorts" (cat {:in (java.io.FileReader. "test/testfiles/inputdata")}))))))
 

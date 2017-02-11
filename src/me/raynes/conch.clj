@@ -81,6 +81,12 @@
           (println x))))
     (conch/done proc)))
 
+(extend-type java.io.InputStream
+  Drinkable
+  (drink [s proc]
+    (conch/feed-from proc s)
+    (conch/done proc)))
+
 (extend-type java.io.Reader
   Drinkable
   (drink [r proc]
