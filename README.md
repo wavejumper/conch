@@ -1,8 +1,8 @@
 # conch
 
-[![CircleCI](https://circleci.com/gh/clj-commons/conch.svg?style=svg)](https://circleci.com/gh/clj-commons/conch)
 [![Clojars Project](https://img.shields.io/clojars/v/clj-commons/conch.svg)](https://clojars.org/clj-commons/conch)
 [![cljdoc badge](https://cljdoc.org/badge/clj-commons/conch)](https://cljdoc.org/d/clj-commons/conch)
+[![CircleCI](https://circleci.com/gh/clj-commons/conch.svg?style=svg)](https://circleci.com/gh/clj-commons/conch)
 
 Conch is actually two libraries. The first, `me.raynes.conch.low-level` is a simple low-level
 interface to the Java process APIs. The second and more interesting library is
